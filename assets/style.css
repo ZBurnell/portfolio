@@ -1,11 +1,12 @@
 *{
     box-sizing: border-box;
     padding: 0px;
-    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif
+    cursor: default;
 }
 
 body {
-  background-color: rgb(125, 125, 125);
+  background-color: #ffffff;
 }
 
 /*Header Section*/
@@ -14,6 +15,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 0%;
+    margin-bottom: 20px;
     text-align: right;
     background-color: #07552c;
     font: #bdbdbd;
@@ -25,7 +27,7 @@ header h1 {
     margin-left: 20px;
 }
 
-nav{
+nav {
     padding-top: 20px;
     margin-right: 20px;
     float: right;
@@ -33,10 +35,14 @@ nav{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: #bdbdbd;
+}
+
 header ul {
     list-style-type: none;
     display: inline-flex;
-    font: #bdbdbd;
 }
 
 header ul li {
@@ -44,53 +50,63 @@ header ul li {
     margin-right: 20px;
 }
 
-.grid-projects{
+.container {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.grid-projects-main {
-flex: 0 0 72%;
+
+.side{
+    flex: 20%;
+    background-color: #fffff;
+    font:#07552c;
+    padding: 10px;
 }
 
-.grid-projects-secondary{
-    flex: 0 0 36%;
+.main{
+    flex: 80%;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.grid-projects-side {
-    flex: 0 0 25%;
-    float: left;
-    
-}
-
-main {
-    flex: 3;
-    float: right;
-    padding-right: 20px;
-}
-
-.article {
-    box-sizing: content-box;
-    padding: 15px;
-}
-
-.about-me {
-    display: flex;
-    flex-direction: column;
+.about-me{
+    flex: 80%;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
 }
 
-.flex-container{
-display: flex;
+.item-1{
+    grid-area: auto;
+    border-radius: 5px #07552c;
+    background-image: url(assets\digital-marketing-meeting.jpg);
+    background-size: cover;
+    width: 80%;
 }
 
-.projects{
-background-position:center;
-background-color: #bdbdbd;
+.item-1 img{
+    max-width: 80%;
+}
+.item-text{
+   bottom: 10px;
+   color: black;
 }
 
-
-.footer {
-padding: 20px;
+.item-2{
+    grid-area: auto;
+    border-radius: 5px #07552c;
+    background-image: url(assets\Placeholder.1.jpg);
+    background-size: cover;
 }
+
+.item-2 img{
+    flex-wrap: wrap;
+    max-width: 40%;
+}
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+  }
