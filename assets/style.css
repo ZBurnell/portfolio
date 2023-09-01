@@ -14,11 +14,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 0%;
+    margin-top: 0px;
     margin-bottom: 20px;
     text-align: right;
     background-color: #07552c;
-    font: #bdbdbd;
+    font-style: italic;
 }
 
 header h1 {
@@ -37,7 +37,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: #bdbdbd;
+    color: black;
 }
 
 header ul {
@@ -58,50 +58,85 @@ header ul li {
 
 .side{
     flex: 20%;
-    background-color: #fffff;
-    font:#07552c;
-    padding: 10px;
+    padding: 20px;
+    border-right: solid 5px #07552c;
+    margin-right: 20px;
+    
 }
 
 .main{
-    flex: 80%;
+    display: inline-flex;
+    flex: 70%;
     padding: 20px;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .about-me{
-    flex: 80%;
+    flex: 70%;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    font: black;
+}
+
+.me {
+    background-image: url(assets\i-rqDGSSg-X4.jpg);
+    background-size: cover;
+    width: 40%;
+    font: black;
+}
+
+.me img {
+    border: 10px double #07552c;
+    max-width: 40%;
 }
 
 .item-1{
-    grid-area: auto;
-    border-radius: 5px #07552c;
     background-image: url(assets\digital-marketing-meeting.jpg);
     background-size: cover;
     width: 80%;
 }
 
+.item-1:hover{
+    border: 5pt black;
+    opacity: 50%;
+    padding: 10px;
+}
+
 .item-1 img{
-    max-width: 80%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    border: 10px double #07552c;
+
 }
 .item-text{
-   bottom: 10px;
+   justify-content: center;
    color: black;
+   font-size: 20px;
 }
 
 .item-2{
-    grid-area: auto;
-    border-radius: 5px #07552c;
     background-image: url(assets\Placeholder.1.jpg);
     background-size: cover;
+    width: 40%;
+    padding: 25px;
+}
+
+.item-2:hover{
+    border: 5pt black;
+    opacity: 50%;
+    padding: 10px;
 }
 
 .item-2 img{
+    border: 10px double #07552c;
     flex-wrap: wrap;
-    max-width: 40%;
+    max-width: 100%;
+}
+
+.contact-me{
+    marker-start: none;
+    font-size: 16px;
 }
   
   /* Footer */
