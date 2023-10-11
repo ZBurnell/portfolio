@@ -40,6 +40,10 @@ a {
     color: black;
 }
 
+a:hover {
+    opacity: 50%;
+}
+
 header ul {
     list-style-type: none;
     display: inline-flex;
