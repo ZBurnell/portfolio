@@ -1,47 +1,38 @@
 *{
     box-sizing: border-box;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     cursor: default;
+    text-decoration: default;
 }
 
 body {
-  background-color: #ffffff;
-}
-
+   background-image: linear-gradient(-45deg, #077d03, #055d02, #022d01);
+   text-decoration: none;
+  }
+  
 /*Header Section*/
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    text-align: right;
-    background-color: #07552c;
-    font-style: italic;
-}
-
-header h1 {
-    display: inline-block;
-    font-size: 36px;
-    margin-left: 20px;
-}
-
 nav {
     padding-top: 20px;
     margin-right: 20px;
     float: right;
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-a {
+h1{
+    justify-content: left;
+}
+
+.links{
+    justify-content: right;
+    padding: 10pt;
+    color: rgb(221, 86, 13);
     text-decoration: none;
-    color: black;
 }
 
-a:hover {
-    opacity: 50%;
+
+.links:hover {
+    opacity: 20%;
 }
 
 header ul {
@@ -63,7 +54,6 @@ header ul li {
 .side{
     flex: 20%;
     padding: 20px;
-    border-right: solid 5px #07552c;
     margin-right: 20px;
     
 }
@@ -80,20 +70,22 @@ header ul li {
     flex: 70%;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    font: black;
+    color: black;
 }
 
 .me {
     background-image: url(assets\i-rqDGSSg-X4.jpg);
     background-size: cover;
     width: 40%;
-    font: black;
-}
-
-.me img {
-    border: 10px double #07552c;
+    color: black;
     max-width: 40%;
 }
+
+.me:hover{
+    opacity: 50%;
+    padding: 10px;
+}
+
 
 .item-1{
     background-image: url(assets\digital-marketing-meeting.jpg);
@@ -102,7 +94,6 @@ header ul li {
 }
 
 .item-1:hover{
-    border: 5pt black;
     opacity: 50%;
     padding: 10px;
 }
@@ -110,9 +101,8 @@ header ul li {
 .item-1 img{
     max-width: 100%;
     flex-wrap: wrap;
-    border: 10px double #07552c;
-
 }
+
 .item-text{
    justify-content: center;
    color: black;
@@ -127,13 +117,11 @@ header ul li {
 }
 
 .item-2:hover{
-    border: 5pt black;
     opacity: 50%;
     padding: 10px;
 }
 
 .item-2 img{
-    border: 10px double #07552c;
     flex-wrap: wrap;
     max-width: 100%;
 }
@@ -147,5 +135,4 @@ header ul li {
   .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
   }
