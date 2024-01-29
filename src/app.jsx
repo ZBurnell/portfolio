@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Contact from './components/contact';
+import Contact from './components/contact.jsx';
 import Footer from './components/footer';
 import Header from './components/header';
-import Project from './components/project';
+import Work from './components/work';
 import Nav from './components/nav';
 
 function App() {
@@ -74,7 +74,7 @@ function App() {
 		<div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
 			<div className="max-w-5xl w-11/12 mx-auto">
 				<Header />
-				<Project />
+				<Work />
 				<Nav />
 				<Contact />
 				<Footer />
