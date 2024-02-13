@@ -9,7 +9,7 @@ export default [
        title: 'Developer Portfolio',
        imgUrl: '/assets/PWA_Text_Editor.png',
        stack: ['HTML', 'Express', 'Webpack'],
-       link: 'https://zburnell-text-editor-80616e562f94.herokuapp.com/',
+       link: 'TBD',
     },
     {
        title: 'Animal Database',
