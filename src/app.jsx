@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Title from './components/title.jsx';
+import Project from './components/project.jsx';
 import Footer from './components/footer';
 import Header from './components/header';
-import Work from './components/work';
-import Nav from './components/nav';
+
 
 function App() {
 	const [useEffect] = useState(null);
@@ -20,9 +19,7 @@ function App() {
 		<div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
 			<div className="max-w-5xl w-11/12 mx-auto">
 				<Header />
-				<Title />
-				<Nav />
-				<Work />
+				<Project />
 				<Footer />
 			</div>
 		</div>
