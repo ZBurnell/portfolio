@@ -1,6 +1,6 @@
 import React from 'react';
 
-function WorkItem({ title, imgUrl, stack, link }) {
+function PortfolioItem({ title, imgUrl, stack, link }) {
    return (
       <a 
          href={link}
@@ -27,4 +27,4 @@ function WorkItem({ title, imgUrl, stack, link }) {
    )
 }
 
-export default WorkItem;
+export default PortfolioItem;
