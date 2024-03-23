@@ -1,13 +1,13 @@
 import React from 'react';
-import work from '../data/work';
-import WorkItem from './workItem';
+import portfolio from '../data/portfolio';
+import PortfolioItem from './PortfolioItem';
 
-function Work() {
+function Portfolio() {
    return (
       <div className="flex flex-col md:flex-row items-center justify-center">
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {work.map(project => (
-               <WorkItem 
+            {portfolio.map(project => (
+               <PortfolioItem 
                   imgUrl={project.imgUrl}
                   title={project.title}
                   stack={project.stack}
@@ -19,4 +19,4 @@ function Work() {
    )
 }
 
-export default Work;
+export default Portfolio;

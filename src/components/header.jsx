@@ -7,7 +7,7 @@ function Header(){
         <Link className="" to="/">
           <h1 className="">Zack Burnell</h1>
         </Link>
-        <p className="m-0">Developer with knowledge of React, JavaScript, Node, and many other technologies.</p>
+        <p className="m-0">Front-End developer with skills in React, JavaScript, Node, and many other technologies.</p>
       </div>
     </header>
   );
